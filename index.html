@@ -1,0 +1,231 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Hablu.css" type="text/css">
+
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+<title>Hablutalk</title>
+</head>
+<body>
+<header>
+
+<div class="navbar">
+<img src="is (11).jpg">
+<div class="menu">
+<a href="">Home</a>
+  <a href="ABCD.html">About</a>
+  <div class="Submenu">
+    <a href="#">Blog
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-content">
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">javascript</a>
+	  <a href="#">jquery</a>
+	  <a href="#">BOOTSTRAP</a>
+	  <a href="#">PHP</a>
+	  </div>
+	  </div>
+	  <a href="">Contact</a>
+	  </div>
+	  </div>
+	  </header>
+	  <div class="slideshow-container">
+
+<div class="mySlides fade" style="display: block;">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade" style="display: none;">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade" style="display: none;">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot active" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div id="about">
+<div id="text">
+<p>It's all about me.About my Educational qulalification.And lots of things.My life story and also you can know who i am.<a href="ABCD.html">Read more</a></p></div>
+<div id="Great">
+<img src="A+.png">
+</div>
+</div>
+<section id="SALMAN">
+<h1>My Services</h1>
+<div class="Box">
+<div id="SERVICES">
+<img src="Logomaker-Education-202068.jpg">
+<h1>HTML</h1>
+<p>I have a long time experiences about HTML.To know about HTML <a href="">Click here</a></p>
+
+</div>
+
+
+
+<div id="BOSS">
+<img src="Logomaker-Education-202068.jpg">
+<h1>CSS</h1>
+<p>I have a long time experiences about CSS.To know about HTML <a href="">Click here</a></p>
+
+</div>
+
+
+
+
+
+
+
+<div id="JEKLIN">
+<img src="Logomaker-Education-202068.jpg">
+<h1>BOOTSTRAP</h1>
+<p>I have a long time experiences about HTML.To know about HTML <a href="">Click here</a></p>
+</div>
+
+
+
+<div id="A">
+<img src="Logomaker-Education-202068.jpg">
+<h1>JQUARY</h1>
+<p>I have a long time experiences about JQUARY.To know about HTML <a href="">Click here</a></p>
+</div>
+
+
+
+<div id="B">
+<img src="Logomaker-Education-202068.jpg">
+<h1>JAVASCRIPT</h1>
+<p>I have a long time experiences about JAVASCRIPT.To know about HTML <a href="">Click here</a></p>
+
+</div>
+
+
+
+
+
+
+
+<div id="C">
+<img src="Logomaker-Education-202068.jpg">
+<h1>PHP</h1>
+<p>I have a long time experiences about PHP.To know about HTML <a href="">Click here</a></p>
+
+</div>
+</div>
+<br>
+<!-- The content of your page would go here. -->
+ <div class="footer">
+<footer class="footer-distributed">
+<div id="quore">
+<h3>robi</h3>
+</div>
+ 
+		<div class="footer-left">
+          <img src="c:\Users\nilkomol\Downloads\Logomaker-Education-202068.jpg">
+				<h3>About<span>Success</span></h3>
+ 
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="ABCD.html">About</a>
+					|
+					<a href="#">Blog</a>
+					|
+					<a href="#">Contact</a>
+				</p>
+ 
+				<p class="footer-company-name">Success Ltd.</p>
+			</div>
+ 
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>101 Dhanmondi</span>
+						Dhaka,Bangladesh - 4203</p>
+				</div>
+ 
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+01111111111</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@eduonix.com">biswasc040@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+<script type="text/javascript">
+$(document).ready(function(){
+
+$("button#click").click(function(){
+$("div.navbar").toggle();
+});
+});
+</script>	
+</div>
+
+
+
+</section></body></html>
